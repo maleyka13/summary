@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.container {
+  margin: 180px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 280px;
+  display: flex;
+}
+.your-result {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 22px 70px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.your-result h3 {
+  color: hsl(241, 100%, 89%);
+}
+.your-result h2 {
+  color: white;
+}
+.your-result p {
+  color: hsl(241, 100%, 89%);
+  font-size: 12px;
+  text-align: justify;
+  /* width: 150px; */
+}
+.percent {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background-image: linear-gradient(hsl(241, 81%, 54%), hsla(252, 100%, 60%));
+  padding: 25px 45px;
+}
+.percent .score {
+  color: white;
+  font-size: 42px;
+  font-weight: 800;
+}
+.percent .hundred {
+  color: hsl(241, 100%, 79%);
+  font-size: 12px;
+}
+.summary {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  background-color: #fff6f5;
+  padding: 8px;
+  border-radius: 8px;
+}
+.memory {
+  background-color: #fffbf6;
+}
+.verbal {
+  background-color: #f2fbf6;
+}
+.visual {
+  background-color: #f3f3fd;
+}
+.reaction div,
+.memory div,
+.verbal div,
+.visual div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.reaction div p {
+  color: hsl(0, 100%, 67%);
+  font-weight: bold;
+}
+.reaction p span,
+.memory p span,
+.verbal p span,
+.visual p span {
+  color: hsl(241, 100%, 89%);
+}
+.reaction p,
+.memory p,
+.verbal p,
+.visual p {
+  font-weight: bold;
+  font-size: 14px;
+}
+.summary .card-btn {
+  background-color: #303b59;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  padding: 9px 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 800px) {
+  .box {
+    flex-direction: column;
+  }
+}
